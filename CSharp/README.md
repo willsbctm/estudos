@@ -65,6 +65,17 @@ Complexidade:
 
 ![Complexidade](complexidade.JPG)
 
+| Gostaria de                                                 | Generic                    | Immutable                                                                                         |
+| ----------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------- |
+| Armazenar chave/valor<br> para busca rápida por <br>chave   | Dictionary<TKey, TValue>   | ConcurrentDictionary<Tkey,TValue><br>ReadOnlyDictionary<TKey,TValue><br>Immutable<TKey,TValue>    |
+| Acessar itens por indíce                                    | List<T>                    | ImmutableList<T>                                                                                  | 
+| FIFO                                                        | Queue<T>                   | ConcurrentQueue<T><br>ImmutableQueue<T>                                                           |
+| LIFO                                                        | Stack<T>                   | ConcurrentStack<T><br>ImmutableStack<T>                                                           |
+| Acessar itens sequenciais                                   | LinkedList<T>              |                                                                                                   |
+| Receber notificação ao remover/add                          | ObservavleCollection<T>    |                                                                                                   |
+| Lista ordenada                                              | SortedList<TKey,TValue>    | ImmutableSortedDictionary<TKey,Value><br>ImmutableSortedSet<T>                                    |     
+| Conjunto de funções matemáticas                             | HashSet<T><br>SortedSet<T> | ImmutableHashSet<T><br>ImmutableSortedSet<T>                                                      |
+#### Referências
 
-
+[Collections](https://learn.microsoft.com/en-us/dotnet/standard/collections/)
 
