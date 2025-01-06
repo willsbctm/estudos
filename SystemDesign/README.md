@@ -53,7 +53,7 @@ graph TD
     databasearea -- return data --> server
 ```
 
-#### Banco SQL x NoSQL
+#### Banco de dados
 
 #### CAP
 - Consistência:
@@ -62,6 +62,15 @@ graph TD
     Toda solicitação terá uma resposta mesmo que um ou mais nós estejam desativados
 - Particionamento:
     Deve continuar a funcionar mesmo ocorra ou mais falhas de comunicação entre os nós do sistema
+
+#### ACID
+- Atomicidade
+- Consistência
+- Isolamento
+- Disponibilidade
+
+#### SQL x NoSQL
+
 
 <!--
 
