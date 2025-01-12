@@ -1,18 +1,19 @@
 namespace Algoritmos.Encadeado;
 
-public class Lista
+public class ListaCircular
 {
     private readonly No Cabeca;
 
-    public Lista()
+    public ListaCircular()
     {
         Cabeca = new No("");
+        Cabeca.Proximo = Cabeca;
     }
 
     public void Adicionar(No no){
         var calda = Calda();
         calda.Proximo = no;
-        no.Proximo = null;
+        no.Proximo = Cabeca;
     }
 
     public void Remover(No no){
@@ -32,7 +33,7 @@ public class Lista
     public No? BuscarAnterior(No no){
         var noAtual = Cabeca;
 
-        while(noAtual.Proximo != null){
+        while(noAtual.Proximo != Cabeca){
             if(noAtual.Proximo.Chave == no.Chave)
                 return noAtual;
 
@@ -45,7 +46,7 @@ public class Lista
     public int Contar(){
         var contador = 0;
         var no = Cabeca;
-        while(no.Proximo != null){
+        while(no.Proximo != Cabeca){
             contador++;
             no = no.Proximo;
         }
@@ -55,10 +56,12 @@ public class Lista
 
     public No Calda(){
         var no = Cabeca;
-        while(no.Proximo != null){
+        while(no.Proximo != Cabeca){
             no = no.Proximo;
         }
 
         return no;
     }
+
+    public No ObterCabeca() => Cabeca;
 }
