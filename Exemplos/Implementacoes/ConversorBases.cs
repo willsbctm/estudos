@@ -1,7 +1,6 @@
-// See https://aka.ms/new-console-template for more information
-namespace ConversorBases;
+namespace Implementacoes;
 
-public class Conversor{
+public class ConversorBases{
     public string ConverterParaBinario(int valor){
 
         var dividento = valor;
