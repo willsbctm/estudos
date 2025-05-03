@@ -156,3 +156,7 @@ h<sup>2</sup> = (y2 - y1)<sup>2</sup> + (x2 - x1)<sup>2</sup>
 $\sqrt{h^2}$ = $\sqrt{(y2 - y1)^2 + (x2 - x1)^2}$
 
 h = $\sqrt{(y2 - y1)^2 + (x2 - x1)^2}$
+
+# Heap
+
+Detalhes nesse [link](README_heap.md)
