@@ -137,6 +137,10 @@ Número que pode ser dividido de maneira exata por ele mesmo e por 1.
 É suficiente validar: 1 ... $\sqrt{n}$ para avaliar se N é primo.
 
 
+# Heap
+
+Detalhes nesse [link](README_heap.md)
+
 # Distância entre dois pontos
 
 ![Distância](Distancia.png)
@@ -157,6 +161,9 @@ $\sqrt{h^2}$ = $\sqrt{(y2 - y1)^2 + (x2 - x1)^2}$
 
 h = $\sqrt{(y2 - y1)^2 + (x2 - x1)^2}$
 
-# Heap
+Podemos armazenar os valores numa heap e obter os `k closest points`.
 
-Detalhes nesse [link](README_heap.md)
+# Merge entre listas ordernadas
+
+Detalhes nesse [link](README_merge_list.md)
+

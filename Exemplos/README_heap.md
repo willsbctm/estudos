@@ -116,7 +116,7 @@ OBS: Peço desculpas pela mistura pt/en, mas swap e bubbleUp são termos comuns 
 
 Dada a heap `[1,3,5,4,11,10]`. Visualmente na estrutura de árvore:
 
-[<img src="heap.png" width="300"/>]
+<img src="heap.png" width="300"/>
 
 Ao inserir o valor `2`, devemos adicionar no fim do vetor.
 `[1,3,5,4,11,10,2]`.

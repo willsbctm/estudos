@@ -26,4 +26,24 @@ public class KClosestPoints{
 
         return resultado;
     }
+
+    public List<(int,int)> ObterViaHeap(List<(int, int)> points, int k){
+        var heap = new Heap<(int, int)>();
+
+        (int, int) pontoBase = (0,0);
+
+        foreach (var point in points){
+            var distancia = CalcularDistancia(point.Item1, point.Item2, pontoBase.Item1, pontoBase.Item2);
+            heap.Inserir(new HeapItem<(int, int)>(point, distancia));
+        }
+
+        var resultado = new List<(int, int)>();
+        for(var i = 0; i < k; i ++){
+            var valor = heap.Remover();
+            if(valor != null)
+                resultado.Add(valor.Item);
+        }
+
+        return resultado;
+    }
 }

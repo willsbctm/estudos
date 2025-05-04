@@ -15,4 +15,18 @@ public class KClosestPointsTests
         var resposta = c.ObterViaPriorityQueue(points, 2);
         resposta.Should().BeEquivalentTo([(1,0), (1,1)], opt => opt.WithStrictOrdering());
     }
+
+    [Fact]
+    public void DeveEncontrarPontosMaisPertoViaHeap(){
+        var c = new KClosestPoints();
+
+        List<(int,int)> points = [
+            (10,0),
+            (1,1),
+            (1,0),
+            (3,3),
+        ];
+        var resposta = c.ObterViaHeap(points, 2);
+        resposta.Should().BeEquivalentTo([(1,0), (1,1)], opt => opt.WithStrictOrdering());
+    }
 }
