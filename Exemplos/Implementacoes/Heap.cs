@@ -81,7 +81,7 @@ public class Heap<T>{
     public int ObterFilhoEsquerdo(int indice){
         var filho = (2 * indice) + 1;
 
-        return filho < heap.Count - 1 ? filho : -1;
+        return filho < heap.Count ? filho : -1;
     }
 
     public int ObterFilhoDireito(int indice){
