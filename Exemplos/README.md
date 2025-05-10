@@ -167,3 +167,10 @@ Podemos armazenar os valores numa heap e obter os `k closest points`.
 
 Detalhes nesse [link](README_merge_list.md)
 
+# Estruturas de dados e algoritmos:
+- Linked list
+- Array
+- HashMap
+- Stack (LIFO)
+- Queue (FIFO)
+- Sorting
